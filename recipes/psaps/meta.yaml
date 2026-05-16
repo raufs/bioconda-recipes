@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=3.10
     - biopython 
-    - setuptools
+    - setuptools <81
     - pip
     - scipy
     - seaborn-base
