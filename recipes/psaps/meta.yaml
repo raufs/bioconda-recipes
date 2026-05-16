@@ -17,7 +17,8 @@ build:
     
 requirements:
   build:
-     - {{ compiler('cxx') }}
+    - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - setuptools
@@ -28,11 +29,11 @@ requirements:
     - biopython >=1.7
     - setuptools
     - pip
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - ete3
     - joblib
-    - numpy    
+    - numpy 
 
 test:
   commands:
