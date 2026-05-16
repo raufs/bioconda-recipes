@@ -17,24 +17,23 @@ build:
     - {{ pin_subpackage('psaps', max_pin='x') }}
     
 requirements:
-  build:
-    - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
   host:
-    - python
+    - python >=3.10
     - setuptools
     - pip
     - wget
   run:
     - python >=3.10
-    - biopython >=1.7
+    - biopython 
     - setuptools
     - pip
+    - scipy
+    - seaborn-base
     - matplotlib-base
-    - seaborn
+    - pyrodigal
     - ete3
     - joblib
-    - numpy 
+    - numpy
 
 test:
   commands:
