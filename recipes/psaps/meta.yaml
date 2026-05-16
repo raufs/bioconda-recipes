@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/raufs/psaps/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 
+  sha256: 05ada7f2eba277a65133b1328501b7499fb3d106d206fae58d980e408751e883
 
 build:
   number: 0
