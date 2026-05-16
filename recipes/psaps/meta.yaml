@@ -34,6 +34,7 @@ requirements:
     - ete3
     - joblib
     - numpy
+    - legacy-cgi
 
 test:
   commands:
